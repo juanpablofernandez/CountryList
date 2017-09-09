@@ -1,0 +1,6 @@
+framework module CountryList {
+  umbrella header "CountryList-umbrella.h"
+
+  export *
+  module * { export * }
+}

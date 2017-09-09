@@ -1,6 +1,6 @@
 //
-//  CountryList.swift
-//  CountryList
+//  CountryListTableViewController.swift
+//  CountryListExample
 //
 //  Created by Juan Pablo on 9/8/17.
 //  Copyright © 2017 Juan Pablo Fernandez. All rights reserved.
@@ -8,18 +8,18 @@
 
 import UIKit
 
-protocol CountryListDelegate {
+public protocol CountryListDelegate: class {
     func selectedCountry(country: Country)
 }
 
-class CountryList: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
+public class CountryList: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
     
     var tableView: UITableView!
     var searchController: UISearchController?
     var resultsController = UITableViewController()
     var filteredCountries = [Country]()
     
-    var delegate: CountryListDelegate?
+    open weak var delegate: CountryListDelegate?
     
     private var countryList: [Country] {
         let countries = Countries()
@@ -37,7 +37,7 @@ class CountryList: UIViewController, UITableViewDelegate, UITableViewDataSource,
 //        return indexList
 //    }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Country List"
@@ -56,7 +56,7 @@ class CountryList: UIViewController, UITableViewDelegate, UITableViewDataSource,
         setUpSearchBar()
     }
     
-    func updateSearchResults(for searchController: UISearchController) {
+    public func updateSearchResults(for searchController: UISearchController) {
         
         filteredCountries.removeAll()
         
@@ -87,7 +87,7 @@ class CountryList: UIViewController, UITableViewDelegate, UITableViewDataSource,
         self.searchController?.searchResultsUpdater = self
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! CountryCell
         let country = cell.country!
         
@@ -99,7 +99,7 @@ class CountryList: UIViewController, UITableViewDelegate, UITableViewDataSource,
         self.dismiss(animated: true, completion: nil)
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searchController!.isActive && searchController!.searchBar.text != "" {
             return filteredCountries.count
         }
@@ -107,7 +107,7 @@ class CountryList: UIViewController, UITableViewDelegate, UITableViewDataSource,
         return countryList.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as! CountryCell
         
         if searchController!.isActive && searchController!.searchBar.text != "" {

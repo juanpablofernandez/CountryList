@@ -1,6 +1,6 @@
 //
 //  CountryCell.swift
-//  CountryList
+//  CountryListExample
 //
 //  Created by Juan Pablo on 9/8/17.
 //  Copyright © 2017 Juan Pablo Fernandez. All rights reserved.
@@ -49,7 +49,7 @@ class CountryCell: UITableViewCell {
         nameLabel?.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15).isActive = true
         
         extensionLabel = UILabel()
-        extensionLabel?.textColor = UIColor.black
+        extensionLabel?.textColor = UIColor.gray
         extensionLabel?.font = UIFont.systemFont(ofSize: 18)
         extensionLabel?.translatesAutoresizingMaskIntoConstraints = false
         addSubview(extensionLabel!)

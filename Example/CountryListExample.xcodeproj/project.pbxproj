@@ -7,18 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A7265C5A5DE8031E9E3F9A1 /* Pods_CountryListExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2AFA29831213336055BDB8 /* Pods_CountryListExample.framework */; };
 		690994C81F6319690057F43A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690994C71F6319690057F43A /* AppDelegate.swift */; };
 		690994CA1F6319690057F43A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690994C91F6319690057F43A /* ViewController.swift */; };
 		690994CD1F6319690057F43A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690994CB1F6319690057F43A /* Main.storyboard */; };
 		690994CF1F6319690057F43A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 690994CE1F6319690057F43A /* Assets.xcassets */; };
 		690994D21F6319690057F43A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690994D01F6319690057F43A /* LaunchScreen.storyboard */; };
-		690994DB1F6319900057F43A /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690994D91F6319900057F43A /* Countries.swift */; };
-		690994DE1F6319B40057F43A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690994DD1F6319B40057F43A /* Country.swift */; };
-		690994E21F631C800057F43A /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690994E11F631C800057F43A /* CountryList.swift */; };
-		690994E41F6330CF0057F43A /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690994E31F6330CF0057F43A /* CountryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F2AFA29831213336055BDB8 /* Pods_CountryListExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountryListExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		690994C41F6319690057F43A /* CountryListExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryListExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		690994C71F6319690057F43A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		690994C91F6319690057F43A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,10 +24,8 @@
 		690994CE1F6319690057F43A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		690994D11F6319690057F43A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		690994D31F6319690057F43A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		690994D91F6319900057F43A /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
-		690994DD1F6319B40057F43A /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		690994E11F631C800057F43A /* CountryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
-		690994E31F6330CF0057F43A /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		9197787403E50F431B25A178 /* Pods-CountryListExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryListExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountryListExample/Pods-CountryListExample.debug.xcconfig"; sourceTree = "<group>"; };
+		C782CB4C2A9C8CE6EC511740 /* Pods-CountryListExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryListExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountryListExample/Pods-CountryListExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7265C5A5DE8031E9E3F9A1 /* Pods_CountryListExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13EC5BB4912F38C5D7DAC6F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F2AFA29831213336055BDB8 /* Pods_CountryListExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		690994BB1F6319690057F43A = {
 			isa = PBXGroup;
 			children = (
 				690994C61F6319690057F43A /* CountryListExample */,
 				690994C51F6319690057F43A /* Products */,
+				94C5DD1B35D0ABE9AA735BAB /* Pods */,
+				13EC5BB4912F38C5D7DAC6F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,16 +71,21 @@
 			children = (
 				690994C71F6319690057F43A /* AppDelegate.swift */,
 				690994C91F6319690057F43A /* ViewController.swift */,
-				690994E11F631C800057F43A /* CountryList.swift */,
-				690994E31F6330CF0057F43A /* CountryCell.swift */,
-				690994D91F6319900057F43A /* Countries.swift */,
-				690994DD1F6319B40057F43A /* Country.swift */,
 				690994CB1F6319690057F43A /* Main.storyboard */,
 				690994CE1F6319690057F43A /* Assets.xcassets */,
 				690994D01F6319690057F43A /* LaunchScreen.storyboard */,
 				690994D31F6319690057F43A /* Info.plist */,
 			);
 			path = CountryListExample;
+			sourceTree = "<group>";
+		};
+		94C5DD1B35D0ABE9AA735BAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9197787403E50F431B25A178 /* Pods-CountryListExample.debug.xcconfig */,
+				C782CB4C2A9C8CE6EC511740 /* Pods-CountryListExample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 690994D61F6319690057F43A /* Build configuration list for PBXNativeTarget "CountryListExample" */;
 			buildPhases = (
+				30658008EBE93455B578CFAA /* [CP] Check Pods Manifest.lock */,
 				690994C01F6319690057F43A /* Sources */,
 				690994C11F6319690057F43A /* Frameworks */,
 				690994C21F6319690057F43A /* Resources */,
+				4FA1CE8690967EDEAB96D548 /* [CP] Embed Pods Frameworks */,
+				465B773D02CB57BCFD30FDB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,17 +159,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30658008EBE93455B578CFAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		465B773D02CB57BCFD30FDB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CountryListExample/Pods-CountryListExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FA1CE8690967EDEAB96D548 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CountryListExample/Pods-CountryListExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		690994C01F6319690057F43A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				690994DE1F6319B40057F43A /* Country.swift in Sources */,
 				690994CA1F6319690057F43A /* ViewController.swift in Sources */,
-				690994E41F6330CF0057F43A /* CountryCell.swift in Sources */,
-				690994DB1F6319900057F43A /* Countries.swift in Sources */,
 				690994C81F6319690057F43A /* AppDelegate.swift in Sources */,
-				690994E21F631C800057F43A /* CountryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +336,7 @@
 		};
 		690994D71F6319690057F43A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9197787403E50F431B25A178 /* Pods-CountryListExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V92SZ8966T;
@@ -290,6 +350,7 @@
 		};
 		690994D81F6319690057F43A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C782CB4C2A9C8CE6EC511740 /* Pods-CountryListExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V92SZ8966T;
@@ -320,6 +381,7 @@
 				690994D81F6319690057F43A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

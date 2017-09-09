@@ -1,0 +1,16 @@
+PODS:
+  - CountryList (1.0)
+
+DEPENDENCIES:
+  - CountryList (from `..`)
+
+EXTERNAL SOURCES:
+  CountryList:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  CountryList: 424bd1a1f4e0ffe09cec65ee06b58d10d49b7d12
+
+PODFILE CHECKSUM: 2ed8c08ffafc41cb600c612c189113186bbf7156
+
+COCOAPODS: 1.2.1

@@ -1,6 +1,6 @@
 //
 //  Countries.swift
-//  CountryList
+//  CountryListExample
 //
 //  Created by Juan Pablo on 9/8/17.
 //  Copyright © 2017 Juan Pablo Fernandez. All rights reserved.
