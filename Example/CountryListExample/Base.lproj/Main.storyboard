@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RUa-MR-zog">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5xX-iI-7hm">
+            <objects>
+                <viewController id="RUa-MR-zog" customClass="ViewController" customModule="CountryListExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="65G-AE-vkp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rpt-Gs-l5G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qUv-TS-jSX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KP-eE-4gH">
+                                <rect key="frame" x="145" y="318" width="84" height="30"/>
+                                <state key="normal" title="Country List"/>
+                                <connections>
+                                    <action selector="handleCountryList:" destination="RUa-MR-zog" eventType="touchUpInside" id="TYT-0A-gtF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Country" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIw-R9-t9s">
+                                <rect key="frame" x="16" y="423" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nIw-R9-t9s" firstAttribute="top" secondItem="7KP-eE-4gH" secondAttribute="bottom" constant="75" id="119-lb-1bl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nIw-R9-t9s" secondAttribute="trailing" id="6QA-ff-rQp"/>
+                            <constraint firstItem="7KP-eE-4gH" firstAttribute="leading" secondItem="qUv-TS-jSX" secondAttribute="leadingMargin" constant="129" id="GOs-5A-0dI"/>
+                            <constraint firstItem="7KP-eE-4gH" firstAttribute="top" secondItem="65G-AE-vkp" secondAttribute="bottom" constant="298" id="bFl-68-Sqx"/>
+                            <constraint firstItem="Rpt-Gs-l5G" firstAttribute="top" secondItem="7KP-eE-4gH" secondAttribute="bottom" constant="319" id="cFO-Kx-jSs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7KP-eE-4gH" secondAttribute="trailing" constant="130" id="mPo-wA-Z4c"/>
+                            <constraint firstItem="nIw-R9-t9s" firstAttribute="leading" secondItem="qUv-TS-jSX" secondAttribute="leadingMargin" id="sR4-QV-OLc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectedCountryLabel" destination="nIw-R9-t9s" id="Uk1-42-z7I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdf-t2-5tr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="-30"/>
+        </scene>
+    </scenes>
+</document>
