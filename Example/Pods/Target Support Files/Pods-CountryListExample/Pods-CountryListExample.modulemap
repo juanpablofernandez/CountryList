@@ -1,6 +1,0 @@
-framework module Pods_CountryListExample {
-  umbrella header "Pods-CountryListExample-umbrella.h"
-
-  export *
-  module * { export * }
-}

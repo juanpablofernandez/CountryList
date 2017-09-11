@@ -6,6 +6,6 @@ target 'CountryListExample' do
   use_frameworks!
 
   # Pods for CountryListExample
-pod 'CountryList', :path => '..'
+pod 'CountryList'
 
 end
