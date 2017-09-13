@@ -72,7 +72,10 @@ class ViewController: UIViewController {
 class ViewController: UIViewController, CountryListDelegate {
 
         func selectedCountry(country: Country) {
-                print(country)
+                print(country.name)
+                print(country.flag)
+                print(country.countryCode)
+                print(country.phoneExtension)
         }
 }
 ```
