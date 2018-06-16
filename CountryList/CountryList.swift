@@ -27,16 +27,6 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
         return countryList
     }
     
-//    var indexList: [String] {
-//        var indexList: [String] = []
-//        for country in countryList {
-//            if let firstLetter = country.name?.characters.first?.description.lowercased() {
-//                if !indexList.contains(firstLetter) { indexList.append(firstLetter) }
-//            }
-//        }
-//        return indexList
-//    }
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         
@@ -119,7 +109,7 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    func handleCancel() {
+    @objc func handleCancel() {
         self.dismiss(animated: true, completion: nil)
     }
 }
